@@ -9,8 +9,8 @@ import javax.persistence.*;
 public abstract class User
 {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    protected Long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    protected Long userId;
     protected String email;
     protected String password;
     protected String name;
