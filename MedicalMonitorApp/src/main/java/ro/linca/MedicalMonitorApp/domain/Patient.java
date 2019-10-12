@@ -32,4 +32,15 @@ public class Patient extends User
         setGender(gender);
         setAddress(address);
     }
+
+    public void updatePatient(Patient patient)
+    {
+        setUserId(patient.userId);
+        setEmail(patient.email);
+        setPassword(patient.password);
+        setName(patient.name);
+        setBirthDate(patient.birthDate);
+        setGender(patient.gender);
+        setAddress(patient.address);
+    }
 }
