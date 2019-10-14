@@ -24,4 +24,11 @@ public class Drug
         setName(name);
         setAmountInGrams(amountInGrams);
     }
+
+    public void updateDrug(Drug drug)
+    {
+        setName(drug.name);
+        setAmountInGrams(drug.amountInGrams);
+        setPrescriptions(drug.prescriptions);
+    }
 }

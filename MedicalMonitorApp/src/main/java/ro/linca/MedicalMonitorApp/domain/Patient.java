@@ -42,5 +42,6 @@ public class Patient extends User
         setBirthDate(patient.birthDate);
         setGender(patient.gender);
         setAddress(patient.address);
+        setMedicationPlan(patient.medicationPlan);
     }
 }

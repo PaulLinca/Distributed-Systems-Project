@@ -19,4 +19,13 @@ public class Caregiver extends User
     {
         super(email, password, name);
     }
+
+    public void updateCaregiver(Caregiver caregiver)
+    {
+        setUserId(caregiver.userId);
+        setEmail(caregiver.email);
+        setPassword(caregiver.password);
+        setName(caregiver.name);
+        setPatients(caregiver.patients);
+    }
 }

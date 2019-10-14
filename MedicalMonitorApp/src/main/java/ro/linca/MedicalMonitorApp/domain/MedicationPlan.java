@@ -16,4 +16,9 @@ public class MedicationPlan
     protected Long medicationPlanId;
     @OneToMany(mappedBy = "plan", cascade = CascadeType.ALL)
     private Set<Prescription> prescriptions;
+
+    public void updateMedicationPlan(MedicationPlan medicationPlan)
+    {
+        setPrescriptions(medicationPlan.prescriptions);
+    }
 }

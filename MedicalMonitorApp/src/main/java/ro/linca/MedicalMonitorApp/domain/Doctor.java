@@ -23,4 +23,13 @@ public class Doctor extends User
 
         setMedicalField(medicalField);
     }
+
+    public void updateDoctor(Doctor doctor)
+    {
+        setUserId(doctor.userId);
+        setEmail(doctor.email);
+        setPassword(doctor.password);
+        setName(doctor.name);
+        setMedicalField(doctor.medicalField);
+    }
 }
