@@ -24,12 +24,15 @@ public class Doctor extends User
         setMedicalField(medicalField);
     }
 
-    public void updateDoctor(Doctor doctor)
+    public void updateDoctor(Doctor updatedDoctor)
     {
-        setUserId(doctor.userId);
-        setEmail(doctor.email);
-        setPassword(doctor.password);
-        setName(doctor.name);
-        setMedicalField(doctor.medicalField);
+        if(this.userId != updatedDoctor.userId)
+        {
+            return;
+        }
+        setEmail(updatedDoctor.email);
+        setPassword(updatedDoctor.password);
+        setName(updatedDoctor.name);
+        setMedicalField(updatedDoctor.medicalField);
     }
 }

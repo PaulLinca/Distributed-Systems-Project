@@ -33,15 +33,18 @@ public class Patient extends User
         setAddress(address);
     }
 
-    public void updatePatient(Patient patient)
+    public void updatePatient(Patient updatedPatient)
     {
-        setUserId(patient.userId);
-        setEmail(patient.email);
-        setPassword(patient.password);
-        setName(patient.name);
-        setBirthDate(patient.birthDate);
-        setGender(patient.gender);
-        setAddress(patient.address);
-        setMedicationPlan(patient.medicationPlan);
+        if(this.userId != updatedPatient.userId)
+        {
+            return;
+        }
+        setEmail(updatedPatient.email);
+        setPassword(updatedPatient.password);
+        setName(updatedPatient.name);
+        setBirthDate(updatedPatient.birthDate);
+        setGender(updatedPatient.gender);
+        setAddress(updatedPatient.address);
+        setMedicationPlan(updatedPatient.medicationPlan);
     }
 }

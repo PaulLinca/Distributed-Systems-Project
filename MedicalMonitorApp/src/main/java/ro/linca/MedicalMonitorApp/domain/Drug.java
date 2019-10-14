@@ -25,10 +25,14 @@ public class Drug
         setAmountInGrams(amountInGrams);
     }
 
-    public void updateDrug(Drug drug)
+    public void updateDrug(Drug updatedDrug)
     {
-        setName(drug.name);
-        setAmountInGrams(drug.amountInGrams);
-        setPrescriptions(drug.prescriptions);
+        if(this.drugId != updatedDrug.drugId)
+        {
+            return;
+        }
+        setName(updatedDrug.name);
+        setAmountInGrams(updatedDrug.amountInGrams);
+        setPrescriptions(updatedDrug.prescriptions);
     }
 }

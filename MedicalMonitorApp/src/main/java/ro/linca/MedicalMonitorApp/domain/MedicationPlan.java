@@ -17,8 +17,12 @@ public class MedicationPlan
     @OneToMany(mappedBy = "plan", cascade = CascadeType.ALL)
     private Set<Prescription> prescriptions;
 
-    public void updateMedicationPlan(MedicationPlan medicationPlan)
+    public void updateMedicationPlan(MedicationPlan updatedMedicationPlan)
     {
-        setPrescriptions(medicationPlan.prescriptions);
+        if(this.medicationPlanId != updatedMedicationPlan.medicationPlanId)
+        {
+            return;
+        }
+        setPrescriptions(updatedMedicationPlan.prescriptions);
     }
 }
