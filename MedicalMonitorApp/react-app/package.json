@@ -1,0 +1,46 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "material-ui": "^0.20.2",
+    "mdbreact": "^4.21.1",
+    "react": "^16.10.2",
+    "react-activity": "^1.2.2",
+    "react-cookie": "^3.0.4",
+    "react-dom": "^16.10.2",
+    "react-image": "^2.2.1",
+    "react-indicators": "^0.3.11",
+    "react-loading-overlay": "^1.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "3.2.0",
+    "react-spinners": "^0.6.1",
+    "react-table": "^6.10.3",
+    "reactstrap": "^6.5.0",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:8080",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
