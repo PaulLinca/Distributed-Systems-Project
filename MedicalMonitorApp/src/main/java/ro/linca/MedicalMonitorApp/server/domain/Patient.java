@@ -11,7 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class Patient extends User
 {
-    private Date birthDate;
+    private String birthDate;
     private String gender;
     private String address;
     @OneToOne(cascade = CascadeType.ALL)
@@ -23,7 +23,7 @@ public class Patient extends User
         super(email, password, name);
     }
 
-    public Patient(String email, String password, String name, Date birthDate, String gender, String address)
+    public Patient(String email, String password, String name, String birthDate, String gender, String address)
     {
         super(email, password, name);
 

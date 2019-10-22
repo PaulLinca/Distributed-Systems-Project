@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import AppNav from './AppNav'
 import CaregiverBanner from './images/caregiverbanner.png'
-import {Table} from 'reactstrap'
-import {Button} from 'reactstrap'
+import {Table, Button} from 'reactstrap'
+import {Link} from 'react-router-dom'
+import './styles.css'
 
 class Caregiver extends Component 
 {
@@ -44,6 +45,15 @@ class Caregiver extends Component
             <div>
                 <AppNav/>
                 <img src={CaregiverBanner} alt="Available caregivers"/>
+                <div 
+                    className="divheight"
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
+                    <Button outline color="success" tag={Link} to="/caregiver">Add Caregiver</Button>
+                </div>
                 <Table striped>
                 <thead>
                     <tr>

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import AppNav from './AppNav'
 import DrugBanner from './images/drugsbanner.png'
-import {Table} from 'reactstrap'
-import {Button} from 'reactstrap'
+import {Table, Button} from 'reactstrap'
+import {Link} from 'react-router-dom'
+import './styles.css'
+
 class Drug extends Component
  {
     state = 
@@ -42,6 +44,15 @@ class Drug extends Component
             <div>
                 <AppNav/>
                 <img src={DrugBanner} alt="Available drugs"/>
+                <div 
+                    className="divheight"
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
+                    <Button outline color="success" tag={Link} to="/drug">Add Drug</Button>
+                </div>
                 <Table striped>
                 <thead>
                     <tr>

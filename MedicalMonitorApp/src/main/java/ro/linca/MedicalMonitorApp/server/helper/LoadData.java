@@ -26,12 +26,12 @@ public class LoadData
     {
         return args ->
         {
-            logger.info("Preloading " + repository.save(new Patient("cristi@mail.com", "password", "Cristian Cristi", new Date(1000), "Male", "Address 1")));
-            logger.info("Preloading " + repository.save(new Patient("nf@mail.com", "password", "Nelly F", new Date(1000), "Female", "Address 2")));
-            logger.info("Preloading " + repository.save(new Patient("ptt@mail.com", "password", "Inca Un Pacient", new Date(4543), "Male", "Address 3")));
-            logger.info("Preloading " + repository.save(new Patient("mail@mail.com", "password", "Inca Un Pacient", new Date(1340), "Female", "Address 4")));
-            logger.info("Preloading " + repository.save(new Patient("mailul@mail.com", "password", "Pacientul Pacient", new Date(100440), "Female", "Address 5")));
-            logger.info("Preloading " + repository.save(new Patient("mailmail@mail.com", "password", "Pacient Sss", new Date(2), "Male", "Address 6")));
+            logger.info("Preloading " + repository.save(new Patient("cristi@mail.com", "password", "Cristian Cristi", "some date", "Male", "Address 1")));
+            logger.info("Preloading " + repository.save(new Patient("nf@mail.com", "password", "Nelly F", "some date", "Female", "Address 2")));
+            logger.info("Preloading " + repository.save(new Patient("ptt@mail.com", "password", "Inca Un Pacient", "some date", "Male", "Address 3")));
+            logger.info("Preloading " + repository.save(new Patient("mail@mail.com", "password", "Inca Un Pacient", "some date", "Female", "Address 4")));
+            logger.info("Preloading " + repository.save(new Patient("mailul@mail.com", "password", "Pacientul Pacient", "some date", "Female", "Address 5")));
+            logger.info("Preloading " + repository.save(new Patient("mailmail@mail.com", "password", "Pacient Sss", "some date", "Male", "Address 6")));
         };
     }
 
