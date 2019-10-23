@@ -18,7 +18,7 @@ class Home extends Component
             <hr/>
             <center><font face="verdana" size="5" color="black">Get Started!</font></center>
             <center>
-                <Button outline  color="primary" tag={Link} to='/doctors'>Login</Button>
+                <Button outline  color="primary" tag={Link} to='/login'>Login</Button>
             </center>
         </div>
         );
