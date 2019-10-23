@@ -76,7 +76,7 @@ class Patient extends Component
                             <td>{patient.birthdate}</td>
                             <td>{patient.gender}</td>
                             <td>{patient.address}</td>
-                            <td><Button outline color="warning">View</Button></td>
+                            <td><Button outline color="warning" tag={Link} to={'/patient/' + patient.userId}>Edit</Button></td>
                             <td><Button onClick={this.deletePatient.bind(this, patient.userId, index)} outline color="danger">Delete</Button></td>
                         </tr>)
                 }

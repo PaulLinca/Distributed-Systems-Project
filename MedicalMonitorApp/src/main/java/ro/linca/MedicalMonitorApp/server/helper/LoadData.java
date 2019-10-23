@@ -14,7 +14,7 @@ import ro.linca.MedicalMonitorApp.server.repository.DoctorRepository;
 import ro.linca.MedicalMonitorApp.server.repository.DrugRepository;
 import ro.linca.MedicalMonitorApp.server.repository.PatientRepository;
 
-import java.util.Date;
+import java.util.*;
 
 @Configuration
 public class LoadData
@@ -80,3 +80,4 @@ public class LoadData
         };
     }
 }
+

@@ -59,6 +59,8 @@ class Drug extends Component
                     <th>#</th>
                     <th>Name</th>
                     <th>Amount</th>
+                    <th></th>
+                    <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -68,6 +70,7 @@ class Drug extends Component
                             <th scope="row">{drug.drugId}</th>
                             <td>{drug.name}</td>
                             <td>{drug.amountInGrams} g</td>
+                            <td><Button outline color="warning" tag={Link} to={'/drug/' + drug.drugId}>Edit</Button></td>
                             <td><Button onClick={this.deleteDrug.bind(this, drug.drugId, index)} outline color="danger">Delete</Button></td>
                         </tr>)
                 }

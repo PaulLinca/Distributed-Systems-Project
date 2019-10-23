@@ -60,6 +60,8 @@ class Caregiver extends Component
                     <th>#</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th></th>
+                    <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,7 +71,7 @@ class Caregiver extends Component
                             <th scope="row">{caregiver.userId}</th>
                             <td>{caregiver.name}</td>
                             <td>{caregiver.email}</td>
-                            <td><Button outline color="warning">View</Button></td>
+                            <td><Button outline color="warning" tag={Link} to={'/caregiver/' + caregiver.userId}>Edit</Button></td>
                             <td><Button onClick={this.deleteCaregiver.bind(this, caregiver.userId, index)} outline color="danger">Delete</Button></td>
                         </tr>)
                 }

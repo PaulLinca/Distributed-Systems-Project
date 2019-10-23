@@ -5,10 +5,11 @@ import Patient from './Patient'
 import Caregiver from './Caregiver'
 import Drug from './Drug'
 import Plan from './Plan'
-import AddPatient from './AddPatient'
+import AddPatient from './Add/AddPatient'
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import AddDrug from './AddDrug';
-import AddCaregiver from './AddCaregiver';
+import AddDrug from './Add/AddDrug';
+import AddCaregiver from './Add/AddCaregiver';
+import Login from './Login';
 
 class App extends Component 
 {
@@ -24,8 +25,12 @@ class App extends Component
                     <Route path='/drugs' exact={true} component={Drug}/>
                     <Route path='/plans' exact={true} component={Plan}/>
                     <Route path='/patient' exact={true} component={AddPatient}/>
+                    <Route path='/patient/:userId' component={AddPatient}/>
                     <Route path='/drug' exact={true} component={AddDrug}/>
+                    <Route path='/drug/:drugId' component={AddDrug}/>
                     <Route path='/caregiver' exact={true} component={AddCaregiver}/>
+                    <Route path='/caregiver/:userId' component={AddCaregiver}/>
+                    <Route path='/login' exact={true} component={Login}/>
                 </Switch>
             </Router>
         );
